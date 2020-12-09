@@ -1,0 +1,74 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Verify the user is able to login the application",
+        "description": "",
+        "id": "booking-functionality-of-adactin-application;verify-the-user-is-able-to-login-the-application",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8659683900,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User launches the application",
+            "match": {
+              "location": "StepDefinition.user_launches_the_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "User enters the valid \"ArunaDevala\" username in the username field",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "User enters the vail \"aruna123@\" password in the password field",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "User clicks on the login button",
+            "match": {
+              "location": "StepDefinition.user_clicks_on_the_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "User verifies whether HomePage navigates to Search Hotel Page",
+            "match": {
+              "location": "StepDefinition.user_verifies_whether_HomePage_navigates_to_Search_Hotel_Page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Booking functionality of Adactin Application",
+    "description": "",
+    "id": "booking-functionality-of-adactin-application",
+    "keyword": "Feature",
+    "uri": "src/test/java/com/adactin/feature/Adactin.feature"
+  }
+]
