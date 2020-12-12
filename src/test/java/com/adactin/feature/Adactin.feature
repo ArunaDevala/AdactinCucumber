@@ -19,7 +19,7 @@ Scenario Outline: Verify the user is able to login the application
 	|BBB|222|
 	|ArunaDevala|aruna123@|
 
-	
+	@RegressionTest
 Scenario: To check User can update all the fields in Search Hotel page
 	And User select the location from the "index" as "1" drop down option
 	And User select the hotel from the "index" as "1" drop down option
@@ -32,6 +32,8 @@ Scenario: To check User can update all the fields in Search Hotel page
 	And User click on the search button
 	Then User verifies whether search hotel page navigates to select hotel page
 	
+	
+	@SanityTest
 Scenario: To check User can Select the Hotel name to continue the booking
 	And User select the hotel on radio button in select field
 	And User click on the continue button

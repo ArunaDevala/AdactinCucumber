@@ -19,8 +19,10 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(features = "src/test/java/com/adactin/feature/Adactin.feature",
                      glue = "com\\adactin\\stepdefinition",
                      plugin = {/*"pretty","html:Report/CucumberReport", "json:Report/Cucumber.json",*/
-                    		   "com.cucumber.listener.ExtentCucumberFormatter:Report/CucumberExtentReport.html"},
-                    tags = {"@SmokeTest"},
+                    		   "com.cucumber.listener.ExtentCucumberFormatter:Report/CucumberExtentReport.html",
+                    		   "rerun:Report/FailedScenario.txt"},
+                    		 
+                   // tags = {"@SmokeTest"},
                      monochrome= true,
                      dryRun = false,
                      strict = true)
