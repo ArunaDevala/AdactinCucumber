@@ -20,7 +20,7 @@ import cucumber.api.junit.Cucumber;
                      glue = "com\\adactin\\stepdefinition",
                      plugin = {/*"pretty","html:Report/CucumberReport", "json:Report/Cucumber.json",*/
                     		   "com.cucumber.listener.ExtentCucumberFormatter:Report2/CucumberExtentReport.html",
-                    		   "rerun:Report/FailedScenario.txt"},
+                    		  "rerun:Report/FailedScenario.txt"},
                     		 
                    // tags = {"@SmokeTest"},
                      monochrome= true,
